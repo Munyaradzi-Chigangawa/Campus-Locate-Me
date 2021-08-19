@@ -186,10 +186,7 @@ class _PlaceDetailsState extends State<PlaceDetails> {
                   SizedBox(height: 15,),
                 ],
               ),
-              
               )
-
-            
           ],
         ),
       ),
