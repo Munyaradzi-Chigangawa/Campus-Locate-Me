@@ -76,18 +76,18 @@ class ListCard extends StatelessWidget {
                           Row(
                             mainAxisAlignment: MainAxisAlignment.start,
                             children: <Widget>[
-                              Icon(
-                                LineIcons.heart,
-                                size: 18,
-                                color: Colors.orangeAccent,
-                              ),
-                              Text(
-                                d.loves.toString(),
-                                style: TextStyle(
-                                  fontSize: 13,
-                                  color: Colors.grey[600]
-                                ),
-                              ),
+                              // Icon(
+                              //   LineIcons.heart,
+                              //   size: 18,
+                              //   color: Colors.orangeAccent,
+                              // ),
+                              // Text(
+                              //   d.loves.toString(),
+                              //   style: TextStyle(
+                              //     fontSize: 13,
+                              //     color: Colors.grey[600]
+                              //   ),
+                              // ),
                               SizedBox(
                                 width: 20,
                               ),
@@ -204,21 +204,21 @@ class ListCard1 extends StatelessWidget {
                           Row(
                             mainAxisAlignment: MainAxisAlignment.start,
                             children: <Widget>[
-                              Icon(
-                                LineIcons.heart,
-                                size: 18,
-                                color: Colors.orangeAccent,
-                              ),
-                              Text(
-                                d.loves.toString(),
-                                style: TextStyle(
-                                  fontSize: 13,
-                                  color: Colors.grey[600]
-                                ),
-                              ),
-                              SizedBox(
-                                width: 20,
-                              ),
+                              //Icon(
+                              //   LineIcons.heart,
+                              //   size: 18,
+                              //   color: Colors.orangeAccent,
+                              // ),
+                              // Text(
+                              //   d.loves.toString(),
+                              //   style: TextStyle(
+                              //     fontSize: 13,
+                              //     color: Colors.grey[600]
+                              //   ),
+                              // ),
+                              // SizedBox(
+                              //   width: 20,
+                              // ),
                               Icon(
                                 LineIcons.comment_o,
                                 size: 18,

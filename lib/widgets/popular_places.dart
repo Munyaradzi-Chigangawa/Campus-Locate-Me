@@ -13,16 +13,10 @@ import 'package:campus_locate_me/utils/loading_cards.dart';
 class PopularPlaces extends StatelessWidget {
   PopularPlaces({Key key}) : super(key: key);
 
-  
-
-
-  
   @override
   Widget build(BuildContext context) {
     final pb = context.watch<PopularPlacesBloc>();
     
-    
-
     return Column(
       children: <Widget>[
         Container(

@@ -12,6 +12,7 @@ void openDialog (context, title, message){
         content: Text(message),
         title: Text(title),
         actions: <Widget>[
+          // ignore: deprecated_member_use
           FlatButton(
             onPressed: (){
               Navigator.pop(context);

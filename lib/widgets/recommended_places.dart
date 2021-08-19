@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_icons/flutter_icons.dart';
-import 'package:line_icons/line_icons.dart';
 import 'package:provider/provider.dart';
 import 'package:campus_locate_me/blocs/recommanded_places_bloc.dart';
 import 'package:campus_locate_me/models/place.dart';
@@ -87,28 +86,29 @@ class _ListItem extends StatelessWidget {
                   borderRadius: BorderRadius.circular(5),
                   child: CustomCacheImage(imageUrl: d.imageUrl1))),
           ),
-          Align(
-            alignment: Alignment.topRight,
-            child: Container(
-              margin: EdgeInsets.only(top: 10, right: 15),
-              child: FlatButton.icon(
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.all(Radius.circular(25)),
-                ),
-                color: Colors.grey[600].withOpacity(0.5),
-                icon: Icon(
-                  LineIcons.heart,
-                  color: Colors.white,
-                  size: 20,
-                ),
-                label: Text(
-                  d.loves.toString(),
-                  style: TextStyle(color: Colors.white, fontSize: 13),
-                ),
-                onPressed: () {},
-              ),
-            ),
-          ),
+          // Align(
+          //   alignment: Alignment.topRight,
+          //   child: Container(
+          //     margin: EdgeInsets.only(top: 10, right: 15),
+              // ignore: deprecated_member_use
+              // child: FlatButton.icon(
+              //   shape: RoundedRectangleBorder(
+              //     borderRadius: BorderRadius.all(Radius.circular(25)),
+              //   ),
+              //   color: Colors.grey[600].withOpacity(0.5),
+                // icon: Icon(
+                //   LineIcons.heart,
+                //   color: Colors.white,
+                //   size: 20,
+                // ),
+                // label: Text(
+                //   d.loves.toString(),
+                //   style: TextStyle(color: Colors.white, fontSize: 13),
+                // ),
+          //       onPressed: () {},
+          //     ),
+          //   ),
+          // ),
 
           
           
