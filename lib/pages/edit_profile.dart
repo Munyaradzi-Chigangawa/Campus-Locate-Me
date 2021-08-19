@@ -187,6 +187,7 @@ class _EditProfileState extends State<EditProfile> {
             Container(
               height: 45,
               width: MediaQuery.of(context).size.width,
+              // ignore: deprecated_member_use
               child: RaisedButton(
                 
                 textColor: Colors.white,
