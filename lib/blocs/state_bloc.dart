@@ -15,6 +15,7 @@ class StateBloc extends ChangeNotifier {
   List<StateModel> get data => _data;
 
 
+  // ignore: deprecated_member_use
   List<DocumentSnapshot> _snap = new List<DocumentSnapshot>();
   final FirebaseFirestore firestore = FirebaseFirestore.instance;
 
