@@ -11,6 +11,7 @@ openSignInDialog(context){
           title: Text('Sign in first to access this feature') ,
           content: Text("You haven't signed in yet. Please sign in to unlock this feature") ,
           actions: [
+            // ignore: deprecated_member_use
             FlatButton(
               onPressed: (){
                 Navigator.pop(context);
@@ -18,6 +19,7 @@ openSignInDialog(context){
               }, 
               child: Text('Sign in') ),
 
+              // ignore: deprecated_member_use
               FlatButton(
               onPressed: (){
                 
