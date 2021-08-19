@@ -24,6 +24,7 @@ class NotificationBloc extends ChangeNotifier {
   bool _isLoading = true;
   bool get isLoading => _isLoading;
 
+  // ignore: deprecated_member_use
   List<DocumentSnapshot> _snap = new List<DocumentSnapshot>();
 
   List<NotificationModel> _data = [];
@@ -181,6 +182,7 @@ class NotificationBloc extends ChangeNotifier {
           subtitle: HtmlWidget(body),
         ),
         actions: <Widget>[
+          // ignore: deprecated_member_use
           FlatButton(
               child: Text('Ok'),
               onPressed: () {
