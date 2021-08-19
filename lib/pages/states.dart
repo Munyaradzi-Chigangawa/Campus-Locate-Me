@@ -2,7 +2,6 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_icons/flutter_icons.dart';
 import 'package:provider/provider.dart';
-import 'package:campus_locate_me/blocs/blog_bloc.dart';
 import 'package:campus_locate_me/blocs/state_bloc.dart';
 import 'package:campus_locate_me/models/colors.dart';
 import 'package:campus_locate_me/models/state.dart';
@@ -48,14 +47,9 @@ class _StatesPageState extends State<StatesPage> with AutomaticKeepAliveClientMi
 
 
   void _scrollListener() {
-    final db = context.read<BlogBloc>();
-    
-    if (!db.isLoading) {
       if (controller.position.pixels == controller.position.maxScrollExtent) {
         context.read<StateBloc>().setLoading(true);
         context.read<StateBloc>().getData(mounted);
-
-      }
     }
   }
 
