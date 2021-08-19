@@ -28,6 +28,7 @@ class _MorePlacesPageState extends State<MorePlacesPage> {
   ScrollController controller;
   DocumentSnapshot _lastVisible;
   bool _isLoading;
+  // ignore: deprecated_member_use
   List<DocumentSnapshot> _snap = new List<DocumentSnapshot>();
   List<Place> _data = [];
   bool _descending;
@@ -284,18 +285,18 @@ class _ListItem extends StatelessWidget {
                   style: TextStyle(fontSize: 13, color: Colors.grey[700]),
                 ),
                 Spacer(),
-                Icon(
-                  LineIcons.heart,
-                  size: 16,
-                  color: Colors.grey,
-                ),
-                SizedBox(
-                  width: 3,
-                ),
-                Text(
-                  d.loves.toString(),
-                  style: TextStyle(fontSize: 13, color: Colors.grey[700]),
-                ),
+                // Icon(
+                //   LineIcons.heart,
+                //   size: 16,
+                //   color: Colors.grey,
+                // ),
+                // SizedBox(
+                //   width: 3,
+                // ),
+                // Text(
+                //   d.loves.toString(),
+                //   style: TextStyle(fontSize: 13, color: Colors.grey[700]),
+                // ),
                 SizedBox(
                   width: 10,
                 ),
