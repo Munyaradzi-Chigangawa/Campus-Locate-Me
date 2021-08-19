@@ -4,8 +4,6 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
-import 'package:campus_locate_me/blocs/blog_bloc.dart';
-import 'package:campus_locate_me/blocs/bookmark_bloc.dart';
 import 'package:campus_locate_me/blocs/comments_bloc.dart';
 import 'package:campus_locate_me/blocs/featured_bloc.dart';
 import 'package:campus_locate_me/blocs/internet_bloc.dart';
@@ -38,11 +36,9 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return MultiProvider(
       providers: [
-        ChangeNotifierProvider<BlogBloc>( create: (context) => BlogBloc(),),
         ChangeNotifierProvider<InternetBloc>(create: (context) => InternetBloc(),),
         ChangeNotifierProvider<SignInBloc>(create: (context) => SignInBloc(),),
         ChangeNotifierProvider<CommentsBloc>(create: (context) => CommentsBloc(),),
-        ChangeNotifierProvider<BookmarkBloc>(create: (context) => BookmarkBloc(),),
         ChangeNotifierProvider<PopularPlacesBloc>(create: (context) => PopularPlacesBloc(),),
         ChangeNotifierProvider<RecentPlacesBloc>(create: (context) => RecentPlacesBloc(),),
         ChangeNotifierProvider<RecommandedPlacesBloc>(create: (context) => RecommandedPlacesBloc(),),
