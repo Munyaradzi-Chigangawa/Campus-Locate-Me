@@ -50,6 +50,7 @@ class _IntroPageState extends State<IntroPage> {
                 color: Theme.of(context).primaryColor,
                 borderRadius: BorderRadius.circular(25),
                 ),
+            // ignore: deprecated_member_use
             child: FlatButton(
               shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(25)),
