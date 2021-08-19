@@ -32,6 +32,7 @@ class _CommentsPageState extends State<CommentsPage> {
   ScrollController controller;
   DocumentSnapshot _lastVisible;
   bool _isLoading;
+  // ignore: deprecated_member_use
   List<DocumentSnapshot> _snap = new List<DocumentSnapshot>();
   List<Comment> _data = [];
   final scaffoldKey = GlobalKey<ScaffoldState>();
@@ -152,6 +153,7 @@ class _CommentsPageState extends State<CommentsPage> {
               Center(
                   child: Row(
                 children: <Widget>[
+                  // ignore: deprecated_member_use
                   FlatButton(
                       shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(25)),
@@ -185,6 +187,7 @@ class _CommentsPageState extends State<CommentsPage> {
                         }
                       }),
                   SizedBox(width: 10),
+                  // ignore: deprecated_member_use
                   FlatButton(
                     shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(25)),
