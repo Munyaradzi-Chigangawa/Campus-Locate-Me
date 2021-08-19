@@ -51,7 +51,7 @@ class _SearchPageState extends State<SearchPage> {
                     fontWeight: FontWeight.w500),
                 decoration: InputDecoration(
                   border: InputBorder.none,
-                  hintText: "search & explore" ,
+                  hintText: "Search & Explore" ,
                   hintStyle: TextStyle(
                       fontSize: 16,
                       fontWeight: FontWeight.w500,
@@ -105,8 +105,8 @@ class _SearchPageState extends State<SearchPage> {
               padding: const EdgeInsets.only(top: 15, left: 15, bottom: 5),
               child: Text(
                 context.watch<SearchBloc>().searchStarted == false
-                    ? 'recent searchs'
-                    : 'we have found',
+                    ? 'Recent Searchs'
+                    : 'We found',
                 textAlign: TextAlign.left,
                 style: TextStyle(
                     color: Colors.grey[800],
@@ -137,8 +137,8 @@ class SuggestionsUI extends StatelessWidget {
       child: sb.recentSearchData.isEmpty 
       ? EmptyPage(
                 icon: Feather.search,
-                message: 'search for places' ,
-                message1: "search-description" ,
+                message: 'Search for Places' ,
+                message1: "Searched Places appear here." ,
         )
       
       : ListView.builder(
